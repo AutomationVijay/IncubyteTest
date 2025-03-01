@@ -26,12 +26,12 @@ public class Xpaths {
 
 	// Data for Account Create
 
-	public static String firstName = "abcdefgh";
-	public static String lastName = "abcdefgh";
-	public static String email = "abcd@yopmail.com";
-	public static String invalid_email = "abcde";
-	public static String password = "abcd@123";
-	public static String invali_password = "123456";
+	public static String firstName = "qwerty";
+	public static String lastName = "qwerty";
+	public static String email = "qwerty@yopmail.com";
+	public static String invalid_email = "qwerty";
+	public static String password = "qwerty@123";
+	public static String invali_password = "qwerty";
 
 	// Home Page
 	public static By actual_Home = By.xpath("//span[@class=\"base\"]");
@@ -80,18 +80,12 @@ public class Xpaths {
 	public static By login_Page = By.xpath("(//span[@class='base'])[1]");
 	public static By login_signIn_Btn = By.xpath("(//span[normalize-space(text())='Sign In'])[1]");
 	
-	
 	public static By login_email = By.xpath("(//input[@id='email'])[1]");
 	public static By login_Password = By.xpath("(//input[@id='pass'])[1]");
-	
 	
 	public static By login_email_Error = By.xpath("(//div[@id='email-error'])[1]");
 	public static By login_password_Error = By.xpath("(//div[@id='pass-error'])[1]");
 	
-	
-	//
-	
-
 	public static By login_Account = By.xpath("//div[@class='panel header']//span[@class='logged-in']");
 	public static String login_Invalid_Msg = "The account sign-in was incorrect or your account is disabled temporarily. Please wait and try again later.";
 	

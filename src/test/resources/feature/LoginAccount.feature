@@ -15,7 +15,7 @@ Feature: Login Account Feature
     Then user click on Sign In button with invalid credentials
     Then verify validation for Sign In page
 
-@test
+
   Scenario: TC_3 - Login Account with valid credentials
     Given user is on dashboard for Login Account
     When user click on Sign In button to open Sign In page
