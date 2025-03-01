@@ -23,6 +23,8 @@ public class Registration extends ActionEngine {
 		this.driver = hooks.getDriver();
 	}
 
+	// Verify user in on home page
+	
 	public void userOnHomePage() {
 
 		String strText = fnGetCurrentURL("User is on Home page.");
@@ -33,7 +35,32 @@ public class Registration extends ActionEngine {
 		}
 		assertEquals(strText, Xpaths.URL);
 		logs.info("Get the URL: " + strText + "");
+	}
+	
+	// Verify user in on home page
+	
+	public void registration_Button() {
+
+		String strText = fnGetCurrentURL("User is on Home page.");
+		if (strText.contains(Xpaths.URL)) {
+			driver.findElement(Xpaths.registration_Btn).click();
+			logs.info("Clicked On Create Account Button.");
+		} else {
+			logs.error("Create Account Button Not Found.");
+		}
+	}
+	
+	public void registration_Page() {
+
+		String strText = fnGetCurrentURL("User is on Create Account Page.");
+		if (strText.contains(Xpaths.createAcc_URL)) {
+			String reg_Page = driver.findElement(Xpaths.account_Page).getText();
+			logs.info("User is on Create Account Page." + reg_Page);
+		} else {
+			logs.error("User is not on Create Account Page.");
+		}
 
 	}
+	
 
 }
