@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="18.494">
+    <testcase classname="Registration Feature" name="TC_1 - Open Registration Page" time="18.101">
+        <system-out><![CDATA[Given user is on dashboard for tenant.......................................passed
+Then user click on Create an Account........................................passed
+And verify user is on registration page.....................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

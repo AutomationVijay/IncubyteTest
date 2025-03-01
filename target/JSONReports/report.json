@@ -1,0 +1,93 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2025-03-01T08:06:12.171Z",
+        "before": [
+          {
+            "result": {
+              "duration": 17112830600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.steps.LoginLogoutStep.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "TC_1 - Open Registration Page",
+        "description": "",
+        "id": "registration-feature;tc-1---open-registration-page",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.steps.LoginLogoutStep.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 700181500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.example.steps.LoginLogoutStep.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 148977200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on dashboard for tenant",
+            "match": {
+              "location": "com.example.steps.RegistrationStep.user_is_on_dashboard_for_tenant()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click on Create an Account",
+            "match": {
+              "location": "com.example.steps.RegistrationStep.user_click_on_Create_an_Account()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify user is on registration page",
+            "match": {
+              "location": "com.example.steps.RegistrationStep.verify_user_is_on_registration_page()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Registration Feature",
+    "description": "",
+    "id": "registration-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/Registration.feature",
+    "tags": []
+  }
+]
