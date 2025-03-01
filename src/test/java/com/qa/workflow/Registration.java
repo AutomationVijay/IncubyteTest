@@ -52,7 +52,7 @@ public class Registration extends ActionEngine {
 
 		String strText = fnGetCurrentURL("User is on Create Account Page.");
 		if (strText.contains(Xpaths.createAcc_URL)) {
-			String reg_Page = driver.findElement(Xpaths.account_Page).getText();
+			String reg_Page = driver.findElement(Xpaths.registration_Page).getText();
 			logs.info("User is on Create Account Page - " + reg_Page);
 		} else {
 			logs.error("User is not on Create Account Page.");
@@ -211,7 +211,7 @@ public class Registration extends ActionEngine {
 		}
 	}
 
-	// click on create an account button
+	// Verify Account is created
 
 	public void verify_Account() throws Exception {
 
@@ -223,7 +223,7 @@ public class Registration extends ActionEngine {
 			} else if (acc_Status.equalsIgnoreCase(Xpaths.Account_Duplicate_Msg)) {
 				logs.error("Account is not created - " + Xpaths.Account_Duplicate_Msg);
 			} else {
-				logs.error("Account is not created, Verify the Data");
+				logs.error("Account is not created, Verify the Credentials");
 			}
 
 		} else {

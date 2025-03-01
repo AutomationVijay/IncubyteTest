@@ -7,11 +7,12 @@
 			<!--
 			
 			<class name="com.example.runners.RegistrationRunner"/>
+			<class name="com.example.runners.LoginAccountRunner"/>
 
 			
 			-->
 
-			<class name="com.example.runners.RegistrationRunner" />
+			<class name="com.example.runners.LoginAccountRunner"/>
 
 		</classes>
 	</test> <!--
