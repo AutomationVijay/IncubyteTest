@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 		features = "src/test/resources/feature/Registration.feature", 
 		glue = "com.example.steps",
-		tags = "@test", 
+//		tags = "@test", 
 		monochrome = true, 
 		dryRun = false,
 		strict = true,

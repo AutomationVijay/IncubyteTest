@@ -15,43 +15,55 @@ public class Xpaths {
 	// Module URL
 
 	public static String URL = "https://magento.softwaretestingboard.com/";
-	
-	
-	// Data for Account Create
-	
-	public static String firstName  = "Vijay";
-	public static String lastName  = "Navgire";
-	public static String email  = "vijay.navgire007@gmail.com";
-	public static String password  = "Vijay@12345";
-	public static String invali_password  = "Vijay@123456";
+	public static String createAcc_URL = "https://magento.softwaretestingboard.com/customer/account/create/";
+	public static String Account_URL = "https://magento.softwaretestingboard.com/customer/account/";
 
-	// Home Page 
+	// Data for Account Create
+
+	public static String firstName = "abcdefgh";
+	public static String lastName = "abcdefgh";
+	public static String email = "abcdefgh@yopmail.com";
+	public static String invalid_email = "abcde";
+	public static String password = "abcdefgh@12345";
+	public static String invali_password = "123456";
+
+	// Home Page
 	public static By actual_Home = By.xpath("//span[@class=\"base\"]");
 	public static String expected_Home = "Home Page";
-	
+
 	// Create Account
-	
+
 	public static By registration_Btn = By.xpath("(//a[normalize-space()='Create an Account'])[1]");
 	public static By account_Page = By.xpath("(//span[@class='base'])[1]");
-	public static String createAcc_URL = "https://magento.softwaretestingboard.com/customer/account/create/";
-	
+
 	public static By registration_Acc_btn = By.xpath("(//span[normalize-space()='Create an Account'])[1]");
-	
+
 	// All Field validation
-	
-	public static String validation = "This is a required field.";
+
+	public static String validation_Msg = "This is a required field.";
+	public static String email_invalid_Msg = "Please enter a valid email address (Ex: johndoe@domain.com).";
+	public static String password_invalid_Msg = "Please enter the same value again.";
+
 	public static By first_Name_Error = By.xpath("//div[@id='firstname-error']");
 	public static By last_Name_Error = By.xpath("//div[@id='lastname-error']");
 	public static By email_ID_Error = By.xpath("//div[@id='email_address-error']");
 	public static By pass_word_Error = By.xpath("//div[@id='password-error']");
 	public static By pass_word_confirm_Error = By.xpath("//div[@id='password-confirmation-error']");
-	
+
 	// Create account data field form
-	
+
 	public static By first_Name = By.xpath("//input[@id='firstname']");
 	public static By last_Name = By.xpath("//input[@id='lastname']");
 	public static By email_ID = By.xpath("//input[@id='email_address']");
 	public static By pass_word = By.xpath("//input[@id='password']");
 	public static By pass_word_confirm = By.xpath("//input[@id='password-confirmation']");
+
+	// Created Account Verified
+
+	public static By Account_Status = By
+			.xpath("//div[@role=\"alert\"]//div[@data-bind='html: $parent.prepareMessageForHtml(message.text)']");
+
+	public static String Account_Create_Msg = "Thank you for registering with Main Website Store.";
+	public static String Account_Duplicate_Msg = "There is already an account with this email address. If you are sure that it is your email address, click here to get your password and access your account.";
 
 }

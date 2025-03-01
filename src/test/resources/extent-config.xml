@@ -28,10 +28,10 @@
         <thumbnailForBase64>false</thumbnailForBase64>
         
 		<!-- title of the document -->
-		<documentTitle>Grant Thornton</documentTitle>
+		<documentTitle>Incubyte</documentTitle>
 		<!-- report name - displayed at top-nav -->
 
-		<reportName>GT Test Automation Reports</reportName>
+		<reportName>Incubyte Test Automation Reports</reportName>
 		<!-- location of charts in the test view -->
 
 <!-- timestamp format -->

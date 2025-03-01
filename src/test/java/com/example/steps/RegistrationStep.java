@@ -51,4 +51,32 @@ public class RegistrationStep {
 
 	}
 
+	@Then("enter invalid data in the fields")
+	public void enter_invalid_data_in_the_fields() throws Exception {
+
+		register.create_Invalid_Account();
+
+	}
+
+	@Then("verify invalid account validation")
+	public void verify_invalid_account_validation() throws Exception {
+
+		register.verify_Invalid_Account();
+
+	}
+
+	@Then("enter valid data in the fields")
+	public void enter_valid_data_in_the_fields() throws Exception {
+
+		register.create_Account();
+
+	}
+
+	@And("verify account create")
+	public void verify_account_create() throws Exception {
+
+		register.verify_Account();
+
+	}
+
 }
