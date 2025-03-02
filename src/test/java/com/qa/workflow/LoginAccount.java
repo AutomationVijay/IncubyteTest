@@ -4,6 +4,7 @@ import static org.testng.Assert.assertEquals;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
 import com.example.hooks.TestHooks;
@@ -215,6 +216,7 @@ public class LoginAccount extends ActionEngine {
 			boolean isAccLogin = driver.findElement(Xpaths.login_Account).isDisplayed();
 			if (isAccLogin) {
 				logs.error("Account is Logged In and it is not duplicate, Verify the Credentials");
+				Assert.fail();
 			}
 
 		}
