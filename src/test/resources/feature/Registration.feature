@@ -1,4 +1,4 @@
-Feature: Registration Feature
+Feature: Registration Account Feature
 
   Scenario: TC_1 - Open Create Account Page
     Given user is on dashboard for Create Account
@@ -27,3 +27,11 @@ Feature: Registration Feature
     Then enter valid data in the fields
     And click on create an account button
     And verify account create
+    
+      Scenario: TC_5 - Create Account with duplicate data
+    Given user is on dashboard for Create Account
+    Then user click on Create an Account
+    And verify user is on registration page
+    Then enter valid data in the fields
+    And click on create an account button
+    And verify duplicate account create

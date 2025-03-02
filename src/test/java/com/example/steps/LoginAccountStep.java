@@ -83,4 +83,16 @@ public class LoginAccountStep {
 
 	}
 
+	@And("logout from the account")
+	public void logout_from_the_account() throws Exception {
+		login.logout_Account();
+
+	}
+	
+	@And("verify disabled temporarily account login")
+	public void verify_disabled_temporarily_account_login() throws Exception {
+		login.disable_Account();
+
+	}
+
 }

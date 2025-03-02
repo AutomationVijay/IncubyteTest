@@ -167,13 +167,56 @@ public class LoginAccount extends ActionEngine {
 	// Verify Account is Signed In
 
 	public void signIn_Account() throws Exception {
-		
+
 		Thread.sleep(3000);
 		boolean acc_Status = driver.findElement(Xpaths.login_Account).isDisplayed();
 		if (acc_Status) {
 			logs.info("Account is logged In Successfully - " + driver.findElement(Xpaths.login_Account).getText());
 		} else {
 			logs.error("Account is not logged In, Verify the Credentials");
+		}
+
+	}
+
+	// Verify Account is Signed Out
+
+	public void logout_Account() throws Exception {
+		Thread.sleep(3000);
+		boolean acc_Status = driver.findElement(Xpaths.login_Account).isDisplayed();
+		if (acc_Status) {
+			driver.findElement(Xpaths.logout_Btn).click();
+			Thread.sleep(2000);
+			driver.findElement(Xpaths.sign_Out).click();
+			String strText = fnGetCurrentURL("User is on Sign In page for account login.");
+			if (strText.contains(Xpaths.URL)) {
+				Thread.sleep(1000);
+				logs.info("Account is logged Out Successfully - " + driver.findElement(Xpaths.actual_Home).getText());
+			} else {
+				logs.error("Account is not logged Out Successfully - " + strText);
+			}
+
+		} else {
+			logs.error("Account is not logged In, Verify the Credentials");
+		}
+
+	}
+
+	// duplicate_Account Verificate
+
+	// Verify Account is Signed In
+
+	public void disable_Account() throws Exception {
+
+		Thread.sleep(3000);
+		String acc_Status = driver.findElement(Xpaths.Account_Status).getText();
+		if (acc_Status.equalsIgnoreCase(Xpaths.login_Invalid_Msg)) {
+			logs.info("Account is not logged in. - " + acc_Status);
+		} else {
+			boolean isAccLogin = driver.findElement(Xpaths.login_Account).isDisplayed();
+			if (isAccLogin) {
+				logs.error("Account is Logged In and it is not duplicate, Verify the Credentials");
+			}
+
 		}
 
 	}

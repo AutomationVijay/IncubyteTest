@@ -230,5 +230,25 @@ public class Registration extends ActionEngine {
 			logs.error("User is not on My Account Page.");
 		}
 	}
+	
+	// Verify Account is created
+
+	public void duplicate_Account() throws Exception {
+
+		String strText = fnGetCurrentURL("User is on My Account Page.");
+		if (strText.contains(Xpaths.Account_URL)) {
+			String acc_Status = driver.findElement(Xpaths.Account_Status).getText();
+			if (acc_Status.equalsIgnoreCase(Xpaths.Account_Create_Msg)) {
+				logs.info("Account is created Successfully - " + Xpaths.Account_Create_Msg);
+			} else if (acc_Status.equalsIgnoreCase(Xpaths.Account_Duplicate_Msg)) {
+				logs.error("Account is not created - " + Xpaths.Account_Duplicate_Msg);
+			} else {
+				logs.error("Account is not created, Verify the Credentials");
+			}
+
+		} else {
+			logs.error("User is not on My Account Page.");
+		}
+	}
 
 }

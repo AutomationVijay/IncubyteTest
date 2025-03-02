@@ -30,10 +30,10 @@ public class Xpaths extends ActionEngine{
 	
 	public static String strText = fnValidRandomString();
 
-	public static String firstName = "Vijay" + strText;
-	public static String lastName = "Navgire" + strText;
+	public static String firstName = "Vijay";
+	public static String lastName = "Navgire";
 	public static String email = "vijay"+strText+"@yopmail.com";
-	public static String invalid_email = "vijay";
+	public static String invalid_email = "vijaynavgire";
 	public static String password = "Vijay@123";
 	public static String invali_password = "Vijay";
 
@@ -76,7 +76,7 @@ public class Xpaths extends ActionEngine{
 	public static String Account_Duplicate_Msg = "There is already an account with this email address. If you are sure that it is your email address, click here to get your password and access your account.";
 
 	
-	// Sign In Page 
+	// Sign In and Sign Out Page 
 	
 	public static By Sign_In_btn = By.xpath("(//a[contains(text(),'Sign In')])[1]");
 	
@@ -93,6 +93,7 @@ public class Xpaths extends ActionEngine{
 	public static By login_Account = By.xpath("//div[@class='panel header']//span[@class='logged-in']");
 	public static String login_Invalid_Msg = "The account sign-in was incorrect or your account is disabled temporarily. Please wait and try again later.";
 	
-	
+	public static By logout_Btn = By.xpath("(//button[@type='button'])[1]");
+	public static By sign_Out = By.xpath("(//a[normalize-space()='Sign Out'])[1]");
 	
 }

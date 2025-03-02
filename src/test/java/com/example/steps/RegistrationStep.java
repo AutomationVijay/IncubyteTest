@@ -78,5 +78,12 @@ public class RegistrationStep {
 		register.verify_Account();
 
 	}
+	
+	@And("verify duplicate account create")
+	public void verify_duplicate_account_create() throws Exception {
 
+		register.duplicate_Account();
+
+	}
+	
 }

@@ -106,8 +106,17 @@ public class ActionEngine extends TestHooks {
 	/***
 	 * Name of Function :- fnValidRandomString Class Name :- ActionEngine, By Vijay
 	 */
+//	public static String fnValidRandomString() {
+//		String aToZ = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz@._,()&-";
+//		String randomStr = RandomStringUtils.random(5, aToZ);
+//		return randomStr;
+//	}
+	
+	/***
+	 * Name of Function :- fnValidRandomString Class Name :- ActionEngine, By Vijay
+	 */
 	public static String fnValidRandomString() {
-		String aToZ = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz@._,()&-";
+		String aToZ = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 		String randomStr = RandomStringUtils.random(5, aToZ);
 		return randomStr;
 	}
