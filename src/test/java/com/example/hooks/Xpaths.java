@@ -30,8 +30,8 @@ public class Xpaths extends ActionEngine{
 	
 	public static String strText = fnValidRandomString();
 
-	public static String firstName = "Vijay";
-	public static String lastName = "Navgire";
+	public static String firstName = "Vijay" + strText;
+	public static String lastName = "Navgire" + strText;
 	public static String email = "vijay"+strText+"@yopmail.com";
 	public static String invalid_email = "vijaynavgire";
 	public static String password = "Vijay@123";
