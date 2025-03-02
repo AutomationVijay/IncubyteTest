@@ -1,9 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="18.494">
-    <testcase classname="Registration Feature" name="TC_1 - Open Registration Page" time="18.101">
-        <system-out><![CDATA[Given user is on dashboard for tenant.......................................passed
-Then user click on Create an Account........................................passed
-And verify user is on registration page.....................................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="258.393">
+    <testcase classname="Login Account Feature" name="TC_1 - Login Account with No credentials" time="92.84">
+        <system-out><![CDATA[Given user is on dashboard for Login Account................................passed
+When user click on Sign In button to open Sign In page......................passed
+And verify user is on login page............................................passed
+Then user click on Sign In button without credentials.......................passed
+And verify empty fields validation for sign in page.........................passed
 ]]></system-out>
+    </testcase>
+    <testcase classname="Login Account Feature" name="TC_2 - Login Account with invalid credentials" time="29.028">
+        <system-out><![CDATA[Given user is on dashboard for Login Account................................passed
+When user click on Sign In button to open Sign In page......................passed
+And verify user is on login page............................................passed
+And enter invalid data in the field.........................................passed
+Then user click on Sign In button with invalid credentials..................passed
+Then verify validation for Sign In page.....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login Account Feature" name="TC_3 - Login and Logout Account with valid credentials" time="71.955">
+        <system-out><![CDATA[Given user is on dashboard for Login Account................................passed
+When user click on Sign In button to open Sign In page......................passed
+And verify user is on login page............................................passed
+And enter valid data in the field...........................................passed
+Then user click on Sign In button with valid credentials....................passed
+Then verify Sign In status..................................................passed
+And logout from the account.................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login Account Feature" name="TC_4 - Login with disabled temporarily account" time="64.43">
+        <failure message="" type="java.lang.AssertionError"><![CDATA[Given user is on dashboard for Login Account................................passed
+When user click on Sign In button to open Sign In page......................passed
+And verify user is on login page............................................passed
+And enter disabled temporarily data in the field............................passed
+Then user click on Sign In button with disabled temporarily credentials.....passed
+And verify disabled temporarily account login...............................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.fail(Assert.java:96)
+	at com.qa.workflow.LoginAccount.disable_Account(LoginAccount.java:233)
+	at com.example.steps.LoginAccountStep.verify_disabled_temporarily_account_login(LoginAccountStep.java:92)
+	at ✽.verify disabled temporarily account login(file:///D:/Automation/Projects/IncubyteTest/src/test/resources/feature/LoginAccount.feature:33)
+]]></failure>
     </testcase>
 </testsuite>

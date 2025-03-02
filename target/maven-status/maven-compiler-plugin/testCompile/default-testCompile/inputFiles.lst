@@ -1,10 +1,13 @@
 D:\Automation\Projects\IncubyteTest\src\test\java\com\example\hooks\TestHooks.java
 D:\Automation\Projects\IncubyteTest\src\test\java\com\example\hooks\Xpaths.java
+D:\Automation\Projects\IncubyteTest\src\test\java\com\example\runners\LoginAccountRunner.java
 D:\Automation\Projects\IncubyteTest\src\test\java\com\example\runners\RegistrationRunner.java
-D:\Automation\Projects\IncubyteTest\src\test\java\com\example\steps\LoginLogoutStep.java
+D:\Automation\Projects\IncubyteTest\src\test\java\com\example\steps\BrowserActions.java
+D:\Automation\Projects\IncubyteTest\src\test\java\com\example\steps\LoginAccountStep.java
 D:\Automation\Projects\IncubyteTest\src\test\java\com\example\steps\RegistrationStep.java
 D:\Automation\Projects\IncubyteTest\src\test\java\com\qa\accelarator\ActionEngine.java
 D:\Automation\Projects\IncubyteTest\src\test\java\com\qa\reports\Reporter.java
 D:\Automation\Projects\IncubyteTest\src\test\java\com\qa\utilities\CaptureScreenshot.java
 D:\Automation\Projects\IncubyteTest\src\test\java\com\qa\utilities\FileUtilities.java
+D:\Automation\Projects\IncubyteTest\src\test\java\com\qa\workflow\LoginAccount.java
 D:\Automation\Projects\IncubyteTest\src\test\java\com\qa\workflow\Registration.java

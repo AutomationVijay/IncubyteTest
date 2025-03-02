@@ -1,36 +1,186 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-01T13:36:10 IST" name="Automation" finished-at="2025-03-01T13:36:31 IST" duration-ms="21347">
+  <suite started-at="2025-03-03T00:46:09 IST" name="Automation" finished-at="2025-03-03T00:53:15 IST" duration-ms="425820">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.example.runners.RegistrationRunner@15888343]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.example.runners.LoginAccountRunner@4d14b6c2]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.example.runners.RegistrationRunner@6e2829c7]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-03-01T13:36:10 IST" name="IncubyteTest" finished-at="2025-03-01T13:36:31 IST" duration-ms="21347">
-      <class name="com.example.runners.RegistrationRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.example.runners.RegistrationRunner@15888343]" started-at="2025-03-01T13:36:10 IST" name="setUpClass" finished-at="2025-03-01T13:36:11 IST" duration-ms="1392" status="PASS">
+    <test started-at="2025-03-03T00:46:09 IST" name="IncubyteTest" finished-at="2025-03-03T00:53:15 IST" duration-ms="425820">
+      <class name="com.example.runners.LoginAccountRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.example.runners.LoginAccountRunner@4d14b6c2]" started-at="2025-03-03T00:48:56 IST" name="setUpClass" finished-at="2025-03-03T00:48:56 IST" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.example.runners.RegistrationRunner@15888343]" started-at="2025-03-01T13:36:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-01T13:36:30 IST" duration-ms="18463" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.example.runners.LoginAccountRunner@4d14b6c2]" started-at="2025-03-03T00:48:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T00:50:29 IST" duration-ms="92868" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["TC_1 - Open Registration Page"]]>
+                <![CDATA["TC_1 - Login Account with No credentials"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Registration Feature"]]>
+                <![CDATA["Login Account Feature"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.example.runners.RegistrationRunner@15888343]" started-at="2025-03-01T13:36:30 IST" name="tearDownClass" finished-at="2025-03-01T13:36:31 IST" duration-ms="1391" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.example.runners.LoginAccountRunner@4d14b6c2]" started-at="2025-03-03T00:50:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T00:50:58 IST" duration-ms="29072" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC_2 - Login Account with invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Account Feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.example.runners.LoginAccountRunner@4d14b6c2]" started-at="2025-03-03T00:50:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T00:52:10 IST" duration-ms="71966" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC_3 - Login and Logout Account with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Account Feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.example.runners.LoginAccountRunner@4d14b6c2]" started-at="2025-03-03T00:52:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T00:53:14 IST" duration-ms="64441" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC_4 - Login with disabled temporarily account"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Account Feature"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at org.junit.Assert.fail(Assert.java:87)
+at org.junit.Assert.fail(Assert.java:96)
+at com.qa.workflow.LoginAccount.disable_Account(LoginAccount.java:233)
+at com.example.steps.LoginAccountStep.verify_disabled_temporarily_account_login(LoginAccountStep.java:92)
+at ✽.verify disabled temporarily account login(file:///D:/Automation/Projects/IncubyteTest/src/test/resources/feature/LoginAccount.feature:33)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.example.runners.LoginAccountRunner@4d14b6c2]" started-at="2025-03-03T00:53:14 IST" name="tearDownClass" finished-at="2025-03-03T00:53:15 IST" duration-ms="968" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.example.runners.LoginAccountRunner -->
+      <class name="com.example.runners.RegistrationRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.example.runners.RegistrationRunner@6e2829c7]" started-at="2025-03-03T00:46:09 IST" name="setUpClass" finished-at="2025-03-03T00:46:11 IST" duration-ms="1609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.example.runners.RegistrationRunner@6e2829c7]" started-at="2025-03-03T00:46:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T00:47:21 IST" duration-ms="69885" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC_1 - Open Create Account Page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Registration Account Feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.example.runners.RegistrationRunner@6e2829c7]" started-at="2025-03-03T00:47:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T00:47:42 IST" duration-ms="21490" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC_2 - Validate Create Account Page with empty field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Registration Account Feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.example.runners.RegistrationRunner@6e2829c7]" started-at="2025-03-03T00:47:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T00:48:08 IST" duration-ms="25274" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC_3 - Create Account with invalid data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Registration Account Feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.example.runners.RegistrationRunner@6e2829c7]" started-at="2025-03-03T00:48:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T00:48:33 IST" duration-ms="25662" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC_4 - Create Account with valid data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Registration Account Feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.example.runners.RegistrationRunner@6e2829c7]" started-at="2025-03-03T00:48:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T00:48:54 IST" duration-ms="20318" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC_5 - Create Account with duplicate data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Registration Account Feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.example.runners.RegistrationRunner@6e2829c7]" started-at="2025-03-03T00:48:54 IST" name="tearDownClass" finished-at="2025-03-03T00:48:56 IST" duration-ms="2075" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

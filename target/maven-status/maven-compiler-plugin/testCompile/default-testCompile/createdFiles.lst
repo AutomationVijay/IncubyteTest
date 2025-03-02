@@ -1,9 +1,12 @@
-com\example\steps\LoginLogoutStep.class
 com\example\steps\RegistrationStep.class
 com\example\hooks\Xpaths.class
 com\qa\reports\Reporter.class
 com\qa\workflow\Registration.class
+com\example\steps\LoginAccountStep.class
+com\qa\workflow\LoginAccount.class
 com\qa\accelarator\ActionEngine.class
+com\example\steps\BrowserActions.class
+com\example\runners\LoginAccountRunner.class
 com\example\runners\RegistrationRunner.class
 com\example\hooks\TestHooks.class
 com\qa\utilities\CaptureScreenshot.class

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>IncubyteTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>8/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Mar 01 13:36:10 IST 2025</td>
+<td>Started on:</td><td>Mon Mar 03 00:46:09 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>21 seconds (21347 ms)</td>
+<tr><td>Total time:</td><td>425 seconds (425820 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,32 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.example.runners.LoginAccountRunner.runScenario()'><b>runScenario</b><br>Test class: com.example.runners.LoginAccountRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_4 - Login with disabled temporarily account", "Login Account Feature"</td>
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.fail(Assert.java:96)
+	at com.qa.workflow.LoginAccount.disable_Account(LoginAccount.java:233)
+	at com.example.steps.LoginAccountStep.verify_disabled_temporarily_account_login(LoginAccountStep.java:92)
+	at ✽.verify disabled temporarily account login(file:///D:/Automation/Projects/IncubyteTest/src/test/resources/feature/LoginAccount.feature:33)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1678351125", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1678351125'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.fail(Assert.java:96)
+	at com.qa.workflow.LoginAccount.disable_Account(LoginAccount.java:233)
+	at com.example.steps.LoginAccountStep.verify_disabled_temporarily_account_login(LoginAccountStep.java:92)
+	at ✽.verify disabled temporarily account login(file:///D:/Automation/Projects/IncubyteTest/src/test/resources/feature/LoginAccount.feature:33)
+</pre></div></td>
+<td>64</td>
+<td>com.example.runners.LoginAccountRunner@4d14b6c2</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,10 +101,45 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.example.runners.RegistrationRunner.runScenario()'><b>runScenario</b><br>Test class: com.example.runners.RegistrationRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_1 - Open Registration Page", "Registration Feature"</td>
+<td title='com.example.runners.LoginAccountRunner.runScenario()'><b>runScenario</b><br>Test class: com.example.runners.LoginAccountRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_1 - Login Account with No credentials", "Login Account Feature"</td>
 <td></td>
-<td>18</td>
-<td>com.example.runners.RegistrationRunner@15888343</td></tr>
+<td>92</td>
+<td>com.example.runners.LoginAccountRunner@4d14b6c2</td></tr>
+<tr>
+<td title='com.example.runners.LoginAccountRunner.runScenario()'><b>runScenario</b><br>Test class: com.example.runners.LoginAccountRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_3 - Login and Logout Account with valid credentials", "Login Account Feature"</td>
+<td></td>
+<td>71</td>
+<td>com.example.runners.LoginAccountRunner@4d14b6c2</td></tr>
+<tr>
+<td title='com.example.runners.RegistrationRunner.runScenario()'><b>runScenario</b><br>Test class: com.example.runners.RegistrationRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_5 - Create Account with duplicate data", "Registration Account Feature"</td>
+<td></td>
+<td>20</td>
+<td>com.example.runners.RegistrationRunner@6e2829c7</td></tr>
+<tr>
+<td title='com.example.runners.RegistrationRunner.runScenario()'><b>runScenario</b><br>Test class: com.example.runners.RegistrationRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_2 - Validate Create Account Page with empty field", "Registration Account Feature"</td>
+<td></td>
+<td>21</td>
+<td>com.example.runners.RegistrationRunner@6e2829c7</td></tr>
+<tr>
+<td title='com.example.runners.RegistrationRunner.runScenario()'><b>runScenario</b><br>Test class: com.example.runners.RegistrationRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_3 - Create Account with invalid data", "Registration Account Feature"</td>
+<td></td>
+<td>25</td>
+<td>com.example.runners.RegistrationRunner@6e2829c7</td></tr>
+<tr>
+<td title='com.example.runners.RegistrationRunner.runScenario()'><b>runScenario</b><br>Test class: com.example.runners.RegistrationRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_1 - Open Create Account Page", "Registration Account Feature"</td>
+<td></td>
+<td>69</td>
+<td>com.example.runners.RegistrationRunner@6e2829c7</td></tr>
+<tr>
+<td title='com.example.runners.LoginAccountRunner.runScenario()'><b>runScenario</b><br>Test class: com.example.runners.LoginAccountRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_2 - Login Account with invalid credentials", "Login Account Feature"</td>
+<td></td>
+<td>29</td>
+<td>com.example.runners.LoginAccountRunner@4d14b6c2</td></tr>
+<tr>
+<td title='com.example.runners.RegistrationRunner.runScenario()'><b>runScenario</b><br>Test class: com.example.runners.RegistrationRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_4 - Create Account with valid data", "Registration Account Feature"</td>
+<td></td>
+<td>25</td>
+<td>com.example.runners.RegistrationRunner@6e2829c7</td></tr>
 </table><p>
 </body>
 </html>

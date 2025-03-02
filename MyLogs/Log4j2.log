@@ -1,22 +1,63 @@
-[INFO ] 26-02-2025 01:16:36 Registration - User is on Home page.
-[INFO ] 26-02-2025 01:16:36 Registration - Get the URL: https://magento.softwaretestingboard.com/
-[INFO ] 26-02-2025 01:21:01 Registration - User is on Home page.
-[INFO ] 26-02-2025 01:21:01 Registration - Get the URL: https://magento.softwaretestingboard.com/
-[INFO ] 26-02-2025 01:25:14 Registration - User is on Home page.
-[INFO ] 26-02-2025 01:25:14 Registration - Get the URL: https://magento.softwaretestingboard.com/
-[INFO ] 26-02-2025 01:37:47 Registration - User is on Home page.
-[INFO ] 26-02-2025 01:37:47 Registration - Get the URL: https://magento.softwaretestingboard.com/
-[INFO ] 26-02-2025 22:31:47 Registration - User is on Home page.
-[INFO ] 26-02-2025 22:31:47 Registration - Get the URL: https://magento.softwaretestingboard.com/
-[INFO ] 26-02-2025 22:36:38 Registration - User is on Home page.
-[INFO ] 26-02-2025 22:36:38 Registration - Get the URL: https://magento.softwaretestingboard.com/
-[INFO ] 01-03-2025 09:56:14 Registration - User is on Home page.
-[INFO ] 01-03-2025 09:56:14 Registration - Get the URL: https://magento.softwaretestingboard.com/
-[INFO ] 01-03-2025 11:30:48 Registration - User is on Home page.
-[INFO ] 01-03-2025 11:30:48 Registration - Get the URL: https://magento.softwaretestingboard.com/
-[INFO ] 01-03-2025 12:48:50 Registration - User is on Home page.
-[INFO ] 01-03-2025 12:48:50 Registration - Get the URL: https://magento.softwaretestingboard.com/
-[INFO ] 01-03-2025 13:00:44 Registration - User is on Home page.
-[INFO ] 01-03-2025 13:00:44 Registration - Get the URL: https://magento.softwaretestingboard.com/
-[INFO ] 01-03-2025 13:36:29 Registration - User is on Home page.
-[INFO ] 01-03-2025 13:36:29 Registration - Get the URL: https://magento.softwaretestingboard.com/
+[INFO ] 03-03-2025 00:46:33 Registration - User is on Home page.
+[INFO ] 03-03-2025 00:46:33 Registration - Get the URL: https://magento.softwaretestingboard.com/
+[INFO ] 03-03-2025 00:47:16 Registration - Clicked On Create Account Button.
+[INFO ] 03-03-2025 00:47:16 Registration - User is on Create Account Page - Create New Customer Account
+[INFO ] 03-03-2025 00:47:34 Registration - User is on Home page.
+[INFO ] 03-03-2025 00:47:34 Registration - Get the URL: https://magento.softwaretestingboard.com/
+[INFO ] 03-03-2025 00:47:36 Registration - Clicked On Create Account Button.
+[INFO ] 03-03-2025 00:47:36 Registration - User is on Create Account Page - Create New Customer Account
+[INFO ] 03-03-2025 00:47:36 Registration - Clicked On Create Account Button.
+[INFO ] 03-03-2025 00:47:36 Registration - Validation for empty First Name is - This is a required field.
+[INFO ] 03-03-2025 00:47:36 Registration - Validation for empty Last Name is - This is a required field.
+[INFO ] 03-03-2025 00:47:37 Registration - Validation for empty Email ID is - This is a required field.
+[INFO ] 03-03-2025 00:47:37 Registration - Validation for empty Password is - This is a required field.
+[INFO ] 03-03-2025 00:47:37 Registration - Validation for empty Confirm Password is - This is a required field.
+[INFO ] 03-03-2025 00:47:55 Registration - User is on Home page.
+[INFO ] 03-03-2025 00:47:55 Registration - Get the URL: https://magento.softwaretestingboard.com/
+[INFO ] 03-03-2025 00:47:58 Registration - Clicked On Create Account Button.
+[INFO ] 03-03-2025 00:47:58 Registration - User is on Create Account Page - Create New Customer Account
+[INFO ] 03-03-2025 00:48:03 Registration - Clicked On Create Account Button.
+[INFO ] 03-03-2025 00:48:03 Registration - Validation for invalid Email ID is - Please enter a valid email address (Ex: johndoe@domain.com).
+[INFO ] 03-03-2025 00:48:03 Registration - Validation for invalid Confirm Password is - Please enter the same value again.
+[INFO ] 03-03-2025 00:48:19 Registration - User is on Home page.
+[INFO ] 03-03-2025 00:48:19 Registration - Get the URL: https://magento.softwaretestingboard.com/
+[INFO ] 03-03-2025 00:48:21 Registration - Clicked On Create Account Button.
+[INFO ] 03-03-2025 00:48:22 Registration - User is on Create Account Page - Create New Customer Account
+[INFO ] 03-03-2025 00:48:30 Registration - Clicked On Create Account Button.
+[INFO ] 03-03-2025 00:48:31 Registration - Account is created Successfully - Thank you for registering with Main Website Store.
+[INFO ] 03-03-2025 00:48:43 Registration - User is on Home page.
+[INFO ] 03-03-2025 00:48:43 Registration - Get the URL: https://magento.softwaretestingboard.com/
+[INFO ] 03-03-2025 00:48:45 Registration - Clicked On Create Account Button.
+[INFO ] 03-03-2025 00:48:45 Registration - User is on Create Account Page - Create New Customer Account
+[INFO ] 03-03-2025 00:48:52 Registration - Clicked On Create Account Button.
+[INFO ] 03-03-2025 00:48:52 Registration - Account is not created - There is already an account with this email address. If you are sure that it is your email address, click here to get your password and access your account.
+[INFO ] 03-03-2025 00:50:14 Registration - User is on Home page.
+[INFO ] 03-03-2025 00:50:14 Registration - Get the URL: https://magento.softwaretestingboard.com/
+[INFO ] 03-03-2025 00:50:18 Registration - Clicked On Sign In Button.
+[INFO ] 03-03-2025 00:50:18 Registration - User is on login Page - Customer Login
+[INFO ] 03-03-2025 00:50:23 Registration - Clicked On Sign In Button.
+[INFO ] 03-03-2025 00:50:23 Registration - Validation for empty Email ID is - This is a required field.
+[INFO ] 03-03-2025 00:50:24 Registration - Validation for empty Password is - This is a required field.
+[INFO ] 03-03-2025 00:50:42 Registration - User is on Home page.
+[INFO ] 03-03-2025 00:50:42 Registration - Get the URL: https://magento.softwaretestingboard.com/
+[INFO ] 03-03-2025 00:50:44 Registration - Clicked On Sign In Button.
+[INFO ] 03-03-2025 00:50:44 Registration - User is on login Page - Customer Login
+[INFO ] 03-03-2025 00:50:53 Registration - Clicked On Sign In Button.
+[INFO ] 03-03-2025 00:50:53 Registration - Validation for invalid Email ID is - Please enter a valid email address (Ex: johndoe@domain.com).
+[INFO ] 03-03-2025 00:51:09 Registration - User is on Home page.
+[INFO ] 03-03-2025 00:51:09 Registration - Get the URL: https://magento.softwaretestingboard.com/
+[INFO ] 03-03-2025 00:51:12 Registration - Clicked On Sign In Button.
+[INFO ] 03-03-2025 00:51:13 Registration - User is on login Page - Customer Login
+[INFO ] 03-03-2025 00:51:13 Registration - Enter Email ID - vijayJfRmK@yopmail.com
+[INFO ] 03-03-2025 00:51:13 Registration - Enter Password - Vijay@123
+[INFO ] 03-03-2025 00:51:54 Registration - Clicked On Sign In Button.
+[INFO ] 03-03-2025 00:51:58 Registration - Account is logged In Successfully - Welcome, VijayJfRmK NavgireJfRmK!
+[INFO ] 03-03-2025 00:52:07 Registration - Account is logged Out Successfully - You are signed out
+[INFO ] 03-03-2025 00:52:23 Registration - User is on Home page.
+[INFO ] 03-03-2025 00:52:23 Registration - Get the URL: https://magento.softwaretestingboard.com/
+[INFO ] 03-03-2025 00:52:55 Registration - Clicked On Sign In Button.
+[INFO ] 03-03-2025 00:52:56 Registration - User is on login Page - Customer Login
+[INFO ] 03-03-2025 00:52:56 Registration - Enter Email ID - abcd@yopmail.com
+[INFO ] 03-03-2025 00:52:56 Registration - Enter Password - Vijay@123
+[INFO ] 03-03-2025 00:53:06 Registration - Clicked On Sign In Button.
+[INFO ] 03-03-2025 00:53:09 Registration - Account is not logged in. - The account sign-in was incorrect or your account is disabled temporarily. Please wait and try again later.
