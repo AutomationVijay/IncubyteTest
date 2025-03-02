@@ -28,6 +28,6 @@ Feature: Login Account Feature
     Given user is on dashboard for Login Account
     When user click on Sign In button to open Sign In page
     And verify user is on login page
-    And enter valid data in the field
-    Then user click on Sign In button with valid credentials
+    And enter disabled temporarily data in the field
+    Then user click on Sign In button with disabled temporarily credentials
     And verify disabled temporarily account login

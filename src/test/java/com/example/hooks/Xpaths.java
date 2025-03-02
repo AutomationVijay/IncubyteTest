@@ -33,6 +33,7 @@ public class Xpaths extends ActionEngine{
 	public static String firstName = "Vijay" + strText;
 	public static String lastName = "Navgire" + strText;
 	public static String email = "vijay"+strText+"@yopmail.com";
+	public static String disable_email = "abcd@yopmail.com";
 	public static String invalid_email = "vijaynavgire";
 	public static String password = "Vijay@123";
 	public static String invali_password = "Vijay";

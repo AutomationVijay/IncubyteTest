@@ -202,9 +202,27 @@ public class LoginAccount extends ActionEngine {
 
 	}
 
-	// duplicate_Account Verificate
+	// login account with disable_Credentials
 
-	// Verify Account is Signed In
+	public void disable_Credentials() throws Exception {
+
+		String strText = fnGetCurrentURL("User is on Sign In page for account login.");
+		if (strText.contains(Xpaths.SignIn_URL)) {
+
+			// Email ID Validation
+			driver.findElement(Xpaths.login_email).sendKeys(Xpaths.disable_email);
+			logs.info("Enter Email ID - " + Xpaths.disable_email);
+
+			// Password Validation
+			driver.findElement(Xpaths.login_Password).sendKeys(Xpaths.password);
+			logs.info("Enter Password - " + Xpaths.password);
+			Thread.sleep(2000);
+		} else {
+			logs.error("User is not on Sign In page for account login.");
+		}
+	}
+
+	// duplicate_Account Verificate
 
 	public void disable_Account() throws Exception {
 

@@ -239,9 +239,9 @@ public class Registration extends ActionEngine {
 		if (strText.contains(Xpaths.Account_URL)) {
 			String acc_Status = driver.findElement(Xpaths.Account_Status).getText();
 			if (acc_Status.equalsIgnoreCase(Xpaths.Account_Create_Msg)) {
-				logs.info("Account is created Successfully - " + Xpaths.Account_Create_Msg);
+				logs.warn("Account is created Successfully - " + Xpaths.Account_Create_Msg);
 			} else if (acc_Status.equalsIgnoreCase(Xpaths.Account_Duplicate_Msg)) {
-				logs.error("Account is not created - " + Xpaths.Account_Duplicate_Msg);
+				logs.info("Account is not created - " + Xpaths.Account_Duplicate_Msg);
 			} else {
 				logs.error("Account is not created, Verify the Credentials");
 			}
