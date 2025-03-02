@@ -52,7 +52,7 @@ public class Registration extends ActionEngine {
 
 		String strText = fnGetCurrentURL("User is on Create Account Page.");
 		if (strText.contains(Xpaths.createAcc_URL)) {
-			String reg_Page = driver.findElement(Xpaths.account_Page).getText();
+			String reg_Page = driver.findElement(Xpaths.registration_Page).getText();
 			logs.info("User is on Create Account Page - " + reg_Page);
 		} else {
 			logs.error("User is not on Create Account Page.");
@@ -211,7 +211,7 @@ public class Registration extends ActionEngine {
 		}
 	}
 
-	// click on create an account button
+	// Verify Account is created
 
 	public void verify_Account() throws Exception {
 
@@ -223,7 +223,27 @@ public class Registration extends ActionEngine {
 			} else if (acc_Status.equalsIgnoreCase(Xpaths.Account_Duplicate_Msg)) {
 				logs.error("Account is not created - " + Xpaths.Account_Duplicate_Msg);
 			} else {
-				logs.error("Account is not created, Verify the Data");
+				logs.error("Account is not created, Verify the Credentials");
+			}
+
+		} else {
+			logs.error("User is not on My Account Page.");
+		}
+	}
+	
+	// Verify Account is created
+
+	public void duplicate_Account() throws Exception {
+
+		String strText = fnGetCurrentURL("User is on My Account Page.");
+		if (strText.contains(Xpaths.Account_URL)) {
+			String acc_Status = driver.findElement(Xpaths.Account_Status).getText();
+			if (acc_Status.equalsIgnoreCase(Xpaths.Account_Create_Msg)) {
+				logs.warn("Account is created Successfully - " + Xpaths.Account_Create_Msg);
+			} else if (acc_Status.equalsIgnoreCase(Xpaths.Account_Duplicate_Msg)) {
+				logs.info("Account is not created - " + Xpaths.Account_Duplicate_Msg);
+			} else {
+				logs.error("Account is not created, Verify the Credentials");
 			}
 
 		} else {
