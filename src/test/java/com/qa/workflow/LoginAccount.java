@@ -167,7 +167,8 @@ public class LoginAccount extends ActionEngine {
 	// Verify Account is Signed In
 
 	public void signIn_Account() throws Exception {
-
+		
+		Thread.sleep(3000);
 		boolean acc_Status = driver.findElement(Xpaths.login_Account).isDisplayed();
 		if (acc_Status) {
 			logs.info("Account is logged In Successfully - " + driver.findElement(Xpaths.login_Account).getText());
