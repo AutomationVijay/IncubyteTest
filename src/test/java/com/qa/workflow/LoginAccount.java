@@ -212,6 +212,7 @@ public class LoginAccount extends ActionEngine {
 		String acc_Status = driver.findElement(Xpaths.Account_Status).getText();
 		if (acc_Status.equalsIgnoreCase(Xpaths.login_Invalid_Msg)) {
 			logs.info("Account is not logged in. - " + acc_Status);
+			Assert.fail();
 		} else {
 			boolean isAccLogin = driver.findElement(Xpaths.login_Account).isDisplayed();
 			if (isAccLogin) {
