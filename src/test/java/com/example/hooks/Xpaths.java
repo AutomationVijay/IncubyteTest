@@ -2,7 +2,9 @@ package com.example.hooks;
 
 import org.openqa.selenium.By;
 
-public class Xpaths {
+import com.qa.accelarator.ActionEngine;
+
+public class Xpaths extends ActionEngine{
 
 	// Browser= chrome, firefox, edge, ie, safari
 
@@ -25,13 +27,15 @@ public class Xpaths {
 	
 
 	// Data for Account Create
+	
+	public static String strText = fnValidRandomString();
 
-	public static String firstName = "qwerty";
-	public static String lastName = "qwerty";
-	public static String email = "qwerty@yopmail.com";
-	public static String invalid_email = "qwerty";
-	public static String password = "qwerty@123";
-	public static String invali_password = "qwerty";
+	public static String firstName = "Vijay" + strText;
+	public static String lastName = "Navgire" + strText;
+	public static String email = "vijay"+strText+"@yopmail.com";
+	public static String invalid_email = "vijay";
+	public static String password = "Vijay@123";
+	public static String invali_password = "Vijay";
 
 	// Home Page
 	public static By actual_Home = By.xpath("//span[@class=\"base\"]");
